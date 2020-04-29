@@ -36,6 +36,17 @@ function Timer(){
   )
 }
 
+function Clicker(){
+  function handleClick(e){
+    alert('Click success')
+    e.preventDefault()
+  }
+
+  return (
+    <a href="#" onClick={handleClick}>Click Here</a>
+  )
+}
+
 //default component
 function App() {
   return (
@@ -52,7 +63,9 @@ function App() {
           <Greeting name="Griezmann" number="17"/>
         */}
 
-        <Timer/>
+        {/* <Timer/> */}
+
+        <Clicker/>
     </header>
     </div>
   );
